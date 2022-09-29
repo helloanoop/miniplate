@@ -1,0 +1,14 @@
+build
+coverage/
+junit.xml
+node_modules/
+jest_*/
+bundle-analysis.json
+
+# Cruft
+.DS_Store
+npm-debug.log
+.idea/
+
+# VSCode
+.vscode/launch.json
