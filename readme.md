@@ -13,6 +13,8 @@ npx miniplate next-tailwind
 ### Miniplates
 * next-tailwind - NextJS and Tailwind
 
+### Demo
+![demo](images/demo.png)
 ### Developer
 Made by [anoop](https://twitter.com/anoopcodes)
 
