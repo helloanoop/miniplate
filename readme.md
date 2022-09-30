@@ -1,9 +1,9 @@
 # miniplate
 
 ### Why
-Most of the time the boilerplate generators out there are too big.
-When hacking around simple projects, I'd like to keep my app very small.
-Miniplate is an attempt to curate a set of commonly used framework and lib combo's
+NextJS + TailwindCSS is my go to stack for prototyping something quickly. The current "npx create-next-app" creates a next app with a little bit of boilerplate (which I have to clean up), and then I have to configure tailwind and make it work.
+
+Now I just run, npx miniplate next-tailwind
 
 ### Usage
 ```bash
