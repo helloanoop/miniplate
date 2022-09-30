@@ -3,6 +3,7 @@
 import yargs from 'yargs';
 import chalk from 'chalk';
 import figlet from 'figlet';
+import defaultCommand from './commands';
 
 const printBanner = () => console.log(
   chalk.yellow(
@@ -22,7 +23,7 @@ export const run = async () => {
   yargs
     .strict()
     .usage('npx miniplate')
-    .commandDir('commands')
+    .command('$0', 'default command', () => {}, defaultCommand)
     .epilogue(CLI_EPILOGUE)
     .help('h')
     .alias('h', 'help').argv;

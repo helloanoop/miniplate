@@ -6,9 +6,6 @@ import inquirer from 'inquirer';
 import spawn from 'cross-spawn';
 import chalk from 'chalk';
 
-export const command = 'next-tailwind';
-export const desc = 'Create a NextJs Tailwind app';
-
 const getFolderName = async () => {
   return new Promise((resolve, reject) =>{
     inquirer.prompt([{
@@ -32,7 +29,7 @@ const shouldRunNpmInstall = async () => {
   });
 }
 
-export const builder = async (yargs) => {
+export default async () => {
   try {
     console.log(chalk.yellow('Creating a NextJs Tailwind app'));
     const folderName = await getFolderName();
